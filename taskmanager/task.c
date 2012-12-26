@@ -8,19 +8,3 @@
 
 #include <stdio.h>
 
-typedef struct task {
-    char name[40];
-    char description[140];
-    int time;
-    struct person *assigned_to;
-} task;
-
-typedef struct person {
-    char name;
-    struct task *assigned_task;
-} person;
-
-
-task taskList[15];
-person* personList[15];
-
