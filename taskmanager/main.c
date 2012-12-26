@@ -26,19 +26,19 @@ typedef struct person {
 
 
 
-typedef struct Array {
+typedef struct TaskArray {
     task *array;
     size_t used;
     size_t size;
-} Array;
+} TaskArray;
 
-void initArray(Array *a, size_t initialSize) {
+void initTaskArray(TaskArray *a, size_t initialSize) {
     a->array = (task *)malloc(initialSize * sizeof(task));
     a->used = 0;
     a->size = initialSize;
 }
 
-void insertArray(Array *a, task element) {
+void insertTaskArray(TaskArray *a, task element) {
     if (a->used == a->size) {
         a->size *= 2;
         a->array = (task *)realloc(a->array, a->size * sizeof(task));
@@ -46,20 +46,20 @@ void insertArray(Array *a, task element) {
     a->array[a->used++] = element;
 }
 
-void freeArray(Array *a) {
+void freeTaskArray(TaskArray *a) {
     free(a->array);
     a->array = NULL;
     a->used = a->size = 0;
 }
 
 
-Array taskList;
+TaskArray taskList;
 person personList;
 
 int main(int argc, const char * argv[])
 {
 
-    initArray(&taskList, 5);
+    initTaskArray(&taskList, 5);
     for (int i = 0; i > -1; i++) {
         task *currentTask = malloc(sizeof(task));
         printf("What is the name of your task?\n");
@@ -70,7 +70,7 @@ int main(int argc, const char * argv[])
         
         //printf("%s\n", currentTask->name);
         //1printf("%s\n", currentTask->description);
-        insertArray(&taskList, *currentTask);
+        insertTaskArray(&taskList, *currentTask);
         for (int n = 0; n <= i; n++) {
             printf("%s", taskList.array[n].name);
     }
