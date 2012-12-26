@@ -7,12 +7,16 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "task.c"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    task currentTask;
+    printf("What is the name of your first task?");
+    scanf("%s", &currentTask.name);
+    printf("%s", &currentTask.name);
     return 0;
 }
 

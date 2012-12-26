@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F90B1AD168A67F200F898D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F90B1AC168A67F200F898D3 /* main.c */; };
 		7F90B1AF168A67F200F898D3 /* taskmanager.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F90B1AE168A67F200F898D3 /* taskmanager.1 */; };
+		7F90B1B6168A684F00F898D3 /* task.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F90B1B5168A684F00F898D3 /* task.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		7F90B1A8168A67F200F898D3 /* taskmanager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = taskmanager; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F90B1AC168A67F200F898D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7F90B1AE168A67F200F898D3 /* taskmanager.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = taskmanager.1; sourceTree = "<group>"; };
+		7F90B1B5168A684F00F898D3 /* task.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = task.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				7F90B1AC168A67F200F898D3 /* main.c */,
+				7F90B1B5168A684F00F898D3 /* task.c */,
 				7F90B1AE168A67F200F898D3 /* taskmanager.1 */,
 			);
 			path = taskmanager;
@@ -118,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F90B1AD168A67F200F898D3 /* main.c in Sources */,
+				7F90B1B6168A684F00F898D3 /* task.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
