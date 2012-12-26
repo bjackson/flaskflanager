@@ -14,9 +14,17 @@ int main(int argc, const char * argv[])
 {
 
     task currentTask;
-    printf("What is the name of your first task?");
-    scanf("%s", &currentTask.name);
-    printf("%s", &currentTask.name);
+    while (1==1) {
+        printf("What is the name of your task?\n");
+        scanf("%s", currentTask.name);
+        
+        printf("Describe your task.\n");
+        scanf("%s", currentTask.description);
+        
+        printf("%s\n", currentTask.name);
+        printf("%s\n", currentTask.description);
+    }
     return 0;
 }
 
+l

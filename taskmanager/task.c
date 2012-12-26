@@ -9,8 +9,8 @@
 #include <stdio.h>
 
 typedef struct task {
-    char name;
-    char description;
+    char name[40];
+    char description[140];
     int time;
     struct person *assigned_to;
 } task;
